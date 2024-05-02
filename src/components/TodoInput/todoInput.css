@@ -4,11 +4,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .box {
     width: 500px;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +26,7 @@ main {
 }
 
 .box .label .inputLabel {
-    margin-left: 70px;
+    margin-left: 80px;
 }
 
 .box .container {
@@ -41,6 +42,10 @@ main {
     width: 300px;
     height: 50px;
     margin: 0 10px;
+}
+
+.box .container .textField .textInput {
+    width: 100%;
 }
 
 .box .container .iconContainer {
@@ -73,4 +78,28 @@ main {
 
 .box .container .cancelIconContainer .cancelIcon {
     color: white;
+}
+
+@media(max-width: 500px) {
+    .box {
+        width: 400px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .box .label .inputLabel {
+        margin-left: 20px;
+    }
+
+    .box .container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .box .container .textField {
+        width: 200px;
+    }
 }
