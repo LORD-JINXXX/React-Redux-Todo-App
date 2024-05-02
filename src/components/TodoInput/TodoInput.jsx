@@ -49,8 +49,7 @@ const TodoInput = ({ editFormVisibility, editTodo, cancelUpdate }) => {
 
 
     return (
-
-        <main>
+            <main className='todoInputMain'>
 
             {
                 editFormVisibility === false ?
@@ -69,15 +68,18 @@ const TodoInput = ({ editFormVisibility, editTodo, cancelUpdate }) => {
                                 className='inputLabel' />
                         </div>
                         <div className='container'>
-                            <TextField
-                                required
-                                id="outlined-required"
-                                label="Required"
-                                placeholder='Enter your task'
-                                className='textField'
-                                value={todoValue}
-                                onChange={(e) => setTodoValue(e.target.value)}
-                            />
+                            <div className="textField">
+                                <TextField
+                                    required
+                                    id="outlined-required"
+                                    label="Required"
+                                    placeholder='Enter your task'
+                                    className='textInput'
+                                    size="small"
+                                    value={todoValue}
+                                    onChange={(e) => setTodoValue(e.target.value)}
+                                />
+                            </div>
                             <div className="iconContainer" onClick={handleSubmit}>
                                 <AddIcon className='icon' />
                             </div>
@@ -99,27 +101,32 @@ const TodoInput = ({ editFormVisibility, editTodo, cancelUpdate }) => {
                                 className='inputLabel' />
                         </div>
                         <div className='container'>
-                            <TextField
-                                required
-                                id="outlined-required"
-                                label="Required"
-                                placeholder='Update your task'
-                                className='textField'
-                                value={editValue || ""}
-                                onChange={(e)=>setEditValue(e.target.value)}
-                                
-                            />
+                            <div className="textField">
+                                <TextField
+                                    required
+                                    id="outlined-required"
+                                    label="Required"
+                                    placeholder='Update your task'
+                                    className='textInput'
+                                    size="small"
+                                    value={editValue || ""}
+                                    onChange={(e) => setEditValue(e.target.value)}
+
+                                />
+                            </div>
                             <div className="iconContainer" onClick={handleUpdate}>
                                 <UpdateIcon className='icon' />
                             </div>
                             <div className="cancelIconContainer" onClick={cancelUpdate}>
-                                <CancelIcon className='cancelIcon'  />
+                                <CancelIcon className='cancelIcon' />
                             </div>
                         </div>
                     </Box>
             }
 
         </main>
+        
+       
     )
 }
 
