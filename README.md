@@ -55,6 +55,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Making a Progressive Web App
 
+## Libraries you need 
+
+### react-router-dom
+### redux
+### react-redux
+### @mui/material @emotion/react @emotion/styled
+### @mui/icons-material
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
 ### Advanced Configuration
