@@ -1,0 +1,76 @@
+main {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.box .label {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box .label .inputLabel {
+    margin-left: 70px;
+}
+
+.box .container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box .container .textField {
+    width: 300px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.box .container .iconContainer {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 95, 12);
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.box .container .iconContainer .icon {
+    color: white;
+}
+
+.box .container .cancelIconContainer {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.box .container .cancelIconContainer .cancelIcon {
+    color: white;
+}
