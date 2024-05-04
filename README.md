@@ -8,7 +8,7 @@
 ### All Tasks: Option to delete all tasks from the list at once.
 
 ## Installation
-### Clone this repository: git clone https://github.com/yourusername/react-redux-todo-app.git
+### Clone this repository: git clone https://github.com/LORD-JINXXX/react-redux-todo-app.git
 ### Navigate to the project directory: cd react-redux-todo-app
 ### Install dependencies: npm install
 
